@@ -1,0 +1,31 @@
+*, *:after, *:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-padding: 20vw;
+    --block-width: calc((100vw - 2 * var(--main-padding)) / 2)
+}
+
+html::-webkit-scrollbar {
+    width: 0.75vw;
+    background: #E2E8F030;
+    padding-right: 1rem;
+}
+
+html::-webkit-scrollbar-thumb {
+    background-color: #E2E8F0;
+    border-radius: 0.5vw;
+}
+
+body {
+    background: #0F172A;
+    font-family: Murecho, serif;
+}
+
+.header-main {
+    padding: 0 var(--main-padding);
+    position: relative;
+}

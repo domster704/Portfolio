@@ -1,0 +1,131 @@
+header {
+    position: fixed;
+    padding: 6vw 0;
+    width: var(--block-width);
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    align-self: stretch;
+    height: 100%;
+}
+
+.header-header {
+    color: #E2E8F0;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 3rem;
+    letter-spacing: -0.075rem;
+}
+
+.header-under_header {
+    color: #E2E8F0;
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 1.75rem;
+    letter-spacing: -0.03125rem;
+    margin-top: 0.81vw;
+}
+
+.header-text {
+    color: #94A3B8;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin-top: 1vw;
+    max-width: 20rem;
+}
+
+.header-list {
+    margin-top: 4vw;
+}
+
+.header-list-element {
+    display: flex;
+    padding: 0.6875rem 0.36125rem 0.75rem 0;
+    align-items: center;
+    gap: 1rem;
+    user-select: none;
+    max-width: max-content;
+}
+
+.header-list-element.active > .header-list-element-line {
+    width: 4rem;
+    background: #E2E8F0;
+}
+
+.header-list-element:hover {
+    cursor: pointer;
+}
+
+.header-list-element:not(.active):hover > .header-list-element-line {
+    width: 4rem;
+    background: #E2E8F0;
+    animation-duration: .5s;
+    animation-name: hover-header-list-element;
+}
+
+@keyframes hover-header-list-element {
+    0% {
+        background: #475569;
+        width: 2rem;
+    }
+
+    100% {
+        width: 4rem;
+        background: #E2E8F0;
+    }
+}
+
+.header-list-element-line {
+    width: 2rem;
+    height: 0.1rem;
+    background: #475569;
+    transition: all .1s ease;
+}
+
+.header-list-element-text {
+    color: #64748B;
+    font-size: 0.75rem;
+    font-weight: 700;
+    line-height: 1rem;
+    letter-spacing: 0.075rem;
+    text-transform: uppercase;
+}
+
+.header-list-element.active > .header-list-element-text {
+    color: #E2E8F0;
+}
+
+.header-icons {
+    position: relative;
+    display: flex;
+    gap: 1.25vw;
+    align-items: center;
+    align-content: center;
+    align-self: stretch;
+    margin-top: 0.81rem;
+    height: 100%;
+}
+
+.header-icons-element {
+    width: 1.5rem;
+    aspect-ratio: 1 / 1;
+    user-select: none;
+    transition: all .1s ease;
+}
+
+.header-icons-element:hover {
+    width: 1.75rem;
+    animation-name: choose-header-icons-element;
+    animation-duration: .2s;
+}
+
+@keyframes choose-header-icons-element {
+    0% {
+        width: 1.5rem;
+    }
+
+    100% {
+        width: 1.75rem;
+    }
+}
+

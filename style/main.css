@@ -1,0 +1,146 @@
+main {
+    display: flex;
+    width: var(--block-width);
+    margin-left: calc(var(--block-width) + 1vw);
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8.9375rem;
+    padding: 6vw 0;
+}
+
+.main-about {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.main-about-paragraph {
+    color: #94A3B8;
+    font-size: 1rem;
+    line-height: 1.625rem;
+}
+
+.main-job-place-list {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.main-job-place-list-element {
+    display: flex;
+    gap: 2rem;
+    padding: 1rem;
+    width: var(--block-width);
+    border-radius: 0.5rem;
+    border: 1px solid rgba(0, 0, 0, 0);
+}
+
+.main-job-place-list-element:hover {
+    background-color: #162033;
+    border: 1px solid #162033;
+    cursor: pointer;
+}
+
+.main-job-place-list-element-header {
+    color: #64748B;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.01875rem;
+    text-transform: uppercase;
+    line-height: 1.45rem;
+    align-self: start;
+    min-width: 7rem;
+}
+
+.main-job-place-list-element-block-under-header {
+    display: flex;
+    flex-direction: column;
+    color: #64748B;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.25rem;
+}
+
+.main-job-place-list-element-block-header {
+    display: flex;
+    flex-direction: row;
+}
+
+.main-job-place-list-element-block-header > div {
+    color: #E2E8F0;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.25rem;
+}
+
+.main-job-place-list-element-block-header-link {
+    min-width: 1.5rem;
+    min-height: 1.5rem;
+    background-size: contain;
+    background: url("../res/image/svg/link.svg") no-repeat center center;
+}
+
+.main-job-place-list > a {
+    text-decoration: none;
+    text-decoration-color: transparent;
+}
+
+.main-job-place-list-element-specialization {
+    margin-bottom: 0.5rem;
+}
+
+.main-job-place-list-element-specialization-about {
+    color: #94A3B8;
+    font-size: 0.875rem;
+    line-height: 1.3125rem;
+    margin-bottom: 1rem;
+}
+
+.main-job-place-list-element-skills-list {
+    display: inline-block;
+}
+
+.main-job-place-list-element-skill {
+    display: inline-block;
+    padding: 0.1875rem 0.78125rem 0.3125rem 0.75rem;
+    align-items: center;
+    border-radius: 624.9375rem;
+    background: rgba(45, 212, 191, 0.10);
+    margin-bottom: 0.37rem;
+    margin-right: 0.37rem;
+
+    color: #5EEAD4;
+    font-size: 0.75rem;
+    font-weight: 500;
+    line-height: 1.25rem;
+}
+
+.main-view-full-resume {
+    display: flex;
+    color: #E2E8F0;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.25rem;
+}
+
+.main-view-full-resume * {
+    transition: all 0.1s ease;
+}
+
+.main-view-full-resume > img {
+    align-self: center;
+    width: 0.7rem;
+    height: 0.60156rem;
+    margin-left: 0.37rem;
+}
+
+.main-view-full-resume:hover > p {
+    text-decoration: underline;
+    text-decoration-color: #54D5D4;
+    text-underline-offset: 0.4rem;
+}
+
+.main-view-full-resume:hover > img {
+    margin-left: 1rem;
+}
