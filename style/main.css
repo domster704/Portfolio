@@ -21,6 +21,18 @@ main {
     line-height: 1.625rem;
 }
 
+.main-about-paragraph > a {
+    text-decoration: none;
+    color: #E2E8F0;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.625rem;
+}
+
+.main-about-paragraph > a:hover {
+    color: #54D5D4;
+}
+
 .main-job-place-list {
     display: flex;
     flex-direction: column;
@@ -37,8 +49,9 @@ main {
 }
 
 .main-job-place-list-element:hover {
-    background-color: #162033;
-    border: 1px solid #162033;
+    background-color: rgba(23, 38, 73, 0.5);
+    border: 1px solid rgba(23, 38, 73, 1);
+    box-shadow: 0 0.05rem 0.1rem 0 rgb(23, 38, 73);
     cursor: pointer;
 }
 
@@ -50,7 +63,7 @@ main {
     text-transform: uppercase;
     line-height: 1.45rem;
     align-self: start;
-    min-width: 7rem;
+    min-width: 7.75rem;
 }
 
 .main-job-place-list-element-block-under-header {
@@ -81,7 +94,7 @@ main {
     background: url("../res/image/svg/link.svg") no-repeat center center;
 }
 
-.main-job-place-list > a {
+.main-job-place-list > a, .main-project-list > a {
     text-decoration: none;
     text-decoration-color: transparent;
 }
@@ -143,4 +156,20 @@ main {
 
 .main-view-full-resume:hover > img {
     margin-left: 1rem;
+}
+
+.main-job-place-list-element-image-block {
+    width: calc(7.5rem + 0.125rem * 2);
+    height: calc(4.32813rem + 0.125rem * 2);
+    border-radius: 0.25rem;
+    border: 0.125rem solid rgba(226, 232, 240, 0.10);
+    align-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.main-job-place-list-element-image {
+    width: 7.5rem;
+    height: 4.32813rem;
+    border-radius: 0.125rem;
 }

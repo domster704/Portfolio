@@ -79,7 +79,7 @@ header {
     width: 2rem;
     height: 0.1rem;
     background: #475569;
-    transition: all .1s ease;
+    transition: all .2s ease;
 }
 
 .header-list-element-text {
