@@ -39,6 +39,12 @@ main {
     gap: 3rem;
 }
 
+.main-project-list {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
 .main-job-place-list-element {
     display: flex;
     gap: 2rem;
@@ -159,17 +165,20 @@ main {
 }
 
 .main-job-place-list-element-image-block {
-    width: calc(7.5rem + 0.125rem * 2);
-    height: calc(4.32813rem + 0.125rem * 2);
+    --image-width: 7.5rem;
+    --image-height: 4.32813rem;
+    --border-width: 0.125rem;
+    width: calc(var(--image-width) + var(--border-width) * 2);
+    height: calc(var(--image-height) + var(--border-width) * 2);
     border-radius: 0.25rem;
-    border: 0.125rem solid rgba(226, 232, 240, 0.10);
+    border: var(--border-width) solid rgba(226, 232, 240, 0.10);
     align-content: center;
     align-items: center;
     text-align: center;
 }
 
 .main-job-place-list-element-image {
-    width: 7.5rem;
-    height: 4.32813rem;
-    border-radius: 0.125rem;
+    width: var(--image-width);
+    height: var(--image-height);
+    border-radius: var(--border-width);
 }

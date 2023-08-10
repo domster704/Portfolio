@@ -35,6 +35,27 @@ const VIEWS_CONFIG = {
             "projectURL": "https://domster704.github.io/CreditOnline_SQB_FrontEnd/",
             "about": "Веб-страница для компании, занимающейся кредитами",
             "skills": ["HTML", "CSS", "JavaScript", "AdaptiveDesign"]
+        }, {
+            "image": "res/image/RehabCenter.png",
+            "projectName": "Реабилитационный центр",
+            "subPosition": [],
+            "projectURL": "https://domster704.github.io/RehabCenter_FrontEnd/",
+            "about": "Веб-страница для реабилитационного центра",
+            "skills": ["HTML", "CSS", "JavaScript", "AdaptiveDesign"]
+        }, {
+            "image": "res/image/LCT.png",
+            "projectName": "Расчет стоимости недвижимости",
+            "subPosition": [],
+            "projectURL": "https://github.com/domster704/flaskLCT",
+            "about": "Сервис автоматизирует процесс расчета стоимости квартир и позволяет ускорить процедуру выдачи экспертных заключений о стоимости квартир и избежать сделок, при которых имущество продается по цене ниже рыночной",
+            "skills": ["Python", "Flask", "JWT-token", "YandexAPI", "Flutter", "HTML", "SQL", ]
+        }, {
+            "image": "res/image/PBS.png",
+            "projectName": "PolarBearSearch",
+            "subPosition": [],
+            "projectURL": "https://github.com/domster704/PolarBearServer",
+            "about": "Приложение по поиску белых медведей в Арктике по снимкам с самолёта",
+            "skills": ["Python", "Flask", "OpenCV", "C#", "Windows Forms"]
         }].reverse()
     }
 }
