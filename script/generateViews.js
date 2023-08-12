@@ -85,11 +85,43 @@ class TemplateProject extends Template {
     }
 }
 
-VIEWS_CONFIG.job.list.forEach(elem => {
-    new TemplateJob(elem, VIEWS_CONFIG.job.htmlPlace);
-})
+class TemplateAllProject extends Template {
+    constructor(config, place) {
+        super(config, place);
+        this.temp = `
+        <div class="projects-table-row">
+            <div class="col-1">${this.config.year}</div>
+            <div class="col-2">${this.config.name}</div>
+            <div class="col-3">${this.config.target}</div>
+            <div class="col-4">
+                ${this.generateSkills()}
+            </div>
+            <div class="col-5">
+                ${this.generateLinks()}
+            </div>
+        </div>`
+        this.renderTemplate();
+    }
 
-VIEWS_CONFIG.projects.list.forEach(elem => {
-    new TemplateProject(elem, VIEWS_CONFIG.projects.htmlPlace);
-})
+    renderTemplate() {
+        const htmlPlace = document.querySelector(`.${this.place}`);
+        htmlPlace.innerHTML += this.temp;
+    }
+
+    generateLinks() {
+        let linksHTML = [];
+        for (let i of this.config.links) {
+            linksHTML.push(`
+                <div class="link-list">
+                    <a href="${i.link}" target="_blank">
+                        <div>
+                            <div class="col-5-text">${i.name}</div>
+                            <div><img class="col-5-link" src="" alt=""></div>
+                        </div>
+                    </a>
+                </div>`)
+        }
+        return linksHTML.join("");
+    }
+}
 

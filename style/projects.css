@@ -1,0 +1,143 @@
+.projects {
+    padding: 6vw var(--main-padding);
+    position: relative;
+}
+
+.projects > a:nth-of-type(1) {
+    text-decoration: none;
+    text-decoration-color: transparent;
+}
+
+.back {
+    display: flex;
+    flex-direction: row;
+
+    color: #5EEAD4;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.back-image-block {
+    display: flex;
+    width: 1rem;
+    height: 1rem;
+    padding: 0.19925rem 0.15rem;
+    align-items: flex-start;
+    margin-right: 0.25rem;
+    transition: all .1s ease;
+}
+
+.back:hover > .back-image-block {
+    transform: translateX(-0.3rem);
+    animation-name: back-hover;
+    animation-duration: .1s;
+}
+
+@keyframes back-hover {
+    0% {
+        transform: translateX(0);;
+    }
+
+    100% {
+        transform: translateX(-0.3rem);;
+    }
+}
+
+.projects-header {
+    color: #E2E8F0;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 3rem;
+    letter-spacing: -0.075rem;
+    padding-bottom: 4rem;
+}
+
+.projects-table {
+    display: flex;
+    flex-direction: column;
+}
+
+.projects-table-header > div[class^=col]{
+    color: #E2E8F0;
+}
+
+.projects-table-row {
+    display: flex;
+    flex-direction: row;
+    gap: 2vw;
+
+    width: 100%;
+    text-align: left;
+    padding: 1rem 0;
+
+    font-size: 0.875rem;
+    font-weight: 600;
+    line-height: 1.25rem;
+}
+
+.projects-table-row:not(:last-child) {
+    border-bottom: 2px solid #22293B;
+}
+
+.col-1 {
+    min-width: 3vw;
+
+    color: #94A3B8;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+}
+
+.col-2 {
+    min-width: 15rem;
+
+    color: #E2E8F0;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.375rem;
+}
+
+.col-3 {
+    min-width: 5vw;
+
+    color: #94A3B8;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+}
+
+.col-4 {
+    min-width: 18rem;
+    display: inline-block;
+}
+
+.col-5 {
+    min-width: 15rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    font-size: 0.875rem;
+    font-weight: 500;
+    line-height: 1.09375rem;
+
+}
+
+.col-5-link {
+    min-width: 0.5rem;
+    min-height: 0.5rem;
+    background-size: contain;
+    background: url("../res/image/svg/link_gray.svg") no-repeat center center;
+    margin-left: 0.5rem;
+}
+
+.link-list > a {
+    color: #94A3B8;
+    text-decoration: none;
+    text-decoration-color: transparent;
+}
+
+.link-list > a > div {
+    display: flex;
+    flex-direction: row;
+}

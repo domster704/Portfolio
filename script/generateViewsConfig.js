@@ -48,7 +48,7 @@ const VIEWS_CONFIG = {
             "subPosition": [],
             "projectURL": "https://github.com/domster704/flaskLCT",
             "about": "Сервис автоматизирует процесс расчета стоимости квартир и позволяет ускорить процедуру выдачи экспертных заключений о стоимости квартир и избежать сделок, при которых имущество продается по цене ниже рыночной",
-            "skills": ["Python", "Flask", "JWT-token", "YandexAPI", "Flutter", "HTML", "SQL", ]
+            "skills": ["Python", "Flask", "JWT-token", "YandexAPI", "Flutter", "HTML", "SQL"]
         }, {
             "image": "res/image/PBS.png",
             "projectName": "PolarBearSearch",
@@ -57,5 +57,105 @@ const VIEWS_CONFIG = {
             "about": "Приложение по поиску белых медведей в Арктике по снимкам с самолёта",
             "skills": ["Python", "Flask", "OpenCV", "C#", "Windows Forms"]
         }].reverse()
+    },
+    "allProjects": {
+        "htmlPlace": "projects-table",
+        "list": [{
+            "year": 2023,
+            "name": "Верстка “Кредит онлайн на карту”",
+            "target": "ITConstruct",
+            "skills": ["HTML", "CSS", "JavaScript", "Adaptive design"],
+            "links": [{
+                "name": "GitHub",
+                "link": "https://github.com/domster704/CreditOnline_SQB_FrontEnd"
+            }, {
+                "name": "WebSite",
+                "link": "https://domster704.github.io/CreditOnline_SQB_FrontEnd/"
+            }, {
+                "name": "Figma",
+                "link": "https://www.figma.com/file/vA01M8jr3EJxuiOxoVCfuW/CreditOnlineQSB?type=design&node-id=0-1&mode=design&t=0BLjfRxdmciGTTbs-0"
+            }]
+        }, {
+            "year": 2023,
+            "name": "Верстка “Реабилитационный центр”",
+            "target": "ITConstruct",
+            "skills": ["HTML", "CSS", "JavaScript", "AdaptiveDesign"],
+            "links": [{
+                "name": "GitHub",
+                "link": "https://github.com/domster704/RehabCenter_FrontEnd"
+            }, {
+                "name": "WebSite",
+                "link": "https://domster704.github.io/RehabCenter_FrontEnd/"
+            }, {
+                "name": "Figma",
+                "link": "https://www.figma.com/file/w09wpKUB0tgmN1yB4C0UiK/RecoverCenter?type=design&node-id=1-3&mode=design"
+            }]
+        }, {
+            "year": "2021 - 2023",
+            "name": "Онлайн-магазин на Android",
+            "target": "Янтарь+",
+            "skills": ["Android", "Java", "MySQL", "XML", "FTP", "DBF"],
+            "links": [{
+                "name": "GitHub",
+                "link": "https://github.com/domster704/MARS-work"
+            }]
+        }, {
+            "year": 2022,
+            "name": "Расчет стоимости недвижимости в Москве",
+            "target": "ЛЦТ",
+            "skills": ["Python", "Flask", "JWT-token", "YandexAPI", "Flutter", "HTML", "SQL"],
+            "links": [{
+                "name": "GitHub",
+                "link": "https://github.com/domster704/flaskLCT"
+            }, {
+                "name": "Documentation",
+                "link": "https://docs.google.com/document/d/1HpV5P3-jPuAqcvheBeXZuVYLP_j4Lgj5FY8Zawyhgn4/edit#heading=h.1w2u5joy8ub6"
+            }]
+        }, {
+            "year": 2021,
+            "name": "PolarBearSearch",
+            "target": "Цифровой прорыв",
+            "skills": ["Python", "Flask", "OpenCV", "C#", "Windows Forms"],
+            "links": [{
+                "name": "Веб-сервер",
+                "link": "https://github.com/domster704/PolarBearServer"
+            }, {
+                "name": "Десктоп",
+                "link": "https://github.com/nikitakaralius/polar-bear-search"
+            }, {
+                "name": "Презентация",
+                "link": "https://docs.google.com/presentation/d/1W6TYky-1J5u0NYLySvSMae3_9TNV22Un0rMTcUU4gtM/edit?usp=sharing"
+            }]
+        }, {
+            "year": 2021,
+            "name": "VR-визуализация каталитического крекинга",
+            "target": "ПАО Роснефть",
+            "skills": ["Unity", "C#", "SteamVR"],
+            "links": [{
+                "name": "GitHub",
+                "link": "https://github.com/domster704/KK"
+            }, {
+                "name": "Видео",
+                "link": "https://drive.google.com/file/d/1qvcbCWMlOofYf0SUGdOZUqAYU1gTqj_1/view?usp=sharing"
+            }]
+        }, {
+            "year": 2021,
+            "name": "WebServerGeneration",
+            "target": "Pet-project",
+            "skills": ["HTML", "CSS", "JavaScript", "Bootstrap 5", "Python", "Flask", "SQLAlchemy"],
+            "links": [{
+                "name": "GitHub",
+                "link": "https://github.com/domster704/WebServerGeneration"
+            }]
+        }, {
+            "year": 2021,
+            "name": "Игра-клон Osu",
+            "target": "Pet-project",
+            "skills": ["HTML", "JavaScript", "Canvas2D"],
+            "links": [{
+                "name": "GitHub",
+                "link": "https://github.com/domster704/Osu"
+            }]
+        },]
     }
 }
