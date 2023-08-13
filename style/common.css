@@ -5,7 +5,7 @@
 }
 
 :root {
-    --main-padding: 20vw;
+    --main-padding: max(1rem, 10vw);
     --block-width: calc((100vw - 2 * var(--main-padding)) / 2)
 }
 
@@ -27,7 +27,7 @@ body {
 
 .header-main {
     padding: 0 var(--main-padding);
-    position: relative;
+    position: initial;
 }
 
 .spotlight {
@@ -35,4 +35,10 @@ body {
     height: 100%;
     width: 100%;
     background: radial-gradient(circle at 50% 50%, rgba(29, 78, 216, 0.15) 0%, rgba(0, 0, 0, 0.00) 80.00%);
+}
+
+@media (max-width: 1024px) {
+    .spotlight {
+        display: none;
+    }
 }

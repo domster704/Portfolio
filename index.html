@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <title>Портфолио</title>
-    <link rel="stylesheet" href="style/murecho_font.css">
-    <link rel="stylesheet" href="style/common.css">
-    <link rel="stylesheet" href="style/header.css">
-    <link rel="stylesheet" href="style/main.css">
+    <link href="style/murecho_font.css" rel="stylesheet">
+    <link href="style/common.css" rel="stylesheet">
+    <link href="style/header.css" rel="stylesheet">
+    <link href="style/main.css" rel="stylesheet">
 </head>
 <body>
 <div class="spotlight"></div>
@@ -24,69 +24,84 @@
         <div class="header-list">
             <div class="header-list-element active" onclick="goToElement(this, 'main-about')">
                 <div class="header-list-element-line"></div>
-                <div class="header-list-element-text">About</div>
+                <div class="header-list-element-text">О себе</div>
             </div>
             <div class="header-list-element" onclick="goToElement(this, 'main-job-place-list')">
                 <div class="header-list-element-line"></div>
-                <div class="header-list-element-text">Experience</div>
+                <div class="header-list-element-text">Опыт</div>
             </div>
             <div class="header-list-element" onclick="goToElement(this, 'main-project-list')">
                 <div class="header-list-element-line"></div>
-                <div class="header-list-element-text">Projects</div>
+                <div class="header-list-element-text">Проекты</div>
             </div>
         </div>
         <div class="header-icons">
             <a href="https://github.com/domster704" target="_blank">
-                <img class="header-icons-element" src="res/image/svg/github.svg" alt="">
+                <img alt="" class="header-icons-element" src="res/image/svg/github.svg">
             </a>
             <a href="https://t.me/bolt321" target="_blank">
-                <img class="header-icons-element" src="res/image/svg/tg.svg" alt="">
+                <img alt="" class="header-icons-element" src="res/image/svg/tg.svg">
             </a>
         </div>
     </header>
     <main>
-        <div class="main-about">
-            <div class="main-about-paragraph">
-                Я специализируюсь на создании веб-приложений, цифровом дизайне продуктов, разработке систем визуального
-                дизайна, кроссплатформенном ПО и API.
-                Мне нравится создавать легкий и отзывчивый пользовательский интерфейс и разрабатывать удобные цифровые
-                продукты.
-                Я всегда ищу новые возможности для сотрудничества в проектах для постоянного саморазвития
-            </div>
-            <div class="main-about-paragraph">
-                Мой путь начался с программы обучения <a href="https://www.samsung.com/ru/inrussia/school/"
-                                                         target="_blank">IT School
-                Samsung</a>, и с этого момента я стал заниматься мобильной разработкой. Проработав почти 2 года
-                Android-разрабочтиком в <a href="https://amberizh.ru/" target="_blank">Янтарь+</a>, я решил
-                расширить свой
-                опыт разработкой веб решений и ПО
-            </div>
-            <div class="main-about-paragraph">
-                В настоящее время я обучаюсь в ВУЗе <a href="https://misis.ru/" target="_blank">НИТУ МИСИС</a> по
-                программе <a
-                    href="https://misis.ru/applicants/admission/baccalaureate-and-specialty/faculties/math/"
-                    target="_blank">прикладная
-                математика</a> и развиваюсь как Full-stack разработчик
-            </div>
-        </div>
-        <div class="main-job-place-list">
-            <a href="https://docs.google.com/document/d/1rJf5wbKvd1DfBzc-4wt-n1V-PVf87Klj6TQCP4cWaVc/edit#heading=h.brj968kgos0e"
-               target="_blank">
-                <div class="main-view-full-resume">
-                    <p>Полное резюме</p>
-                    <img src="res/image/svg/next.svg" alt="">
+        <div>
+            <div class="mobile-about">О себе</div>
+            <div class="main-about">
+                <div class="main-about-paragraph">
+                    Я специализируюсь на создании веб-приложений, цифровом дизайне продуктов, разработке систем
+                    визуального
+                    дизайна, кроссплатформенном ПО и API.
+                    Мне нравится создавать легкий и отзывчивый пользовательский интерфейс и разрабатывать удобные
+                    цифровые
+                    продукты.
+                    Я всегда ищу новые возможности для сотрудничества в проектах для постоянного саморазвития
                 </div>
-            </a>
-        </div>
-        <div class="main-project-list">
-            <a href="projectList.html"
-               target="_blank">
-                <div class="main-view-full-resume">
-                    <p>Полный список проектов</p>
-                    <img src="res/image/svg/next.svg" alt="">
+                <div class="main-about-paragraph">
+                    Мой путь начался с программы обучения <a href="https://www.samsung.com/ru/inrussia/school/"
+                                                             target="_blank">IT School
+                    Samsung</a>, и с этого момента я стал заниматься мобильной разработкой. Проработав почти 2 года
+                    Android-разрабочтиком в <a href="https://amberizh.ru/" target="_blank">Янтарь+</a>, я решил
+                    расширить свой
+                    опыт разработкой веб решений и ПО
                 </div>
-            </a>
+                <div class="main-about-paragraph">
+                    В настоящее время я обучаюсь в ВУЗе <a href="https://misis.ru/" target="_blank">НИТУ МИСИС</a> по
+                    программе <a
+                        href="https://misis.ru/applicants/admission/baccalaureate-and-specialty/faculties/math/"
+                        target="_blank">прикладная
+                    математика</a> и развиваюсь как Full-stack разработчик
+                </div>
+                <div class="main-about-paragraph">
+                    Для связи со мной можете написать на <a href="mailto:domster704@mail.ru" target="_blank">domster704@mail.ru</a>
+                </div>
+            </div>
         </div>
+        <div>
+            <div class="mobile-exp">Опыт</div>
+            <div class="main-job-place-list">
+                <a href="https://docs.google.com/document/d/1rJf5wbKvd1DfBzc-4wt-n1V-PVf87Klj6TQCP4cWaVc/edit#heading=h.brj968kgos0e"
+                   target="_blank">
+                    <div class="main-view-full-resume">
+                        <p>Полное резюме</p>
+                        <img alt="" src="res/image/svg/next.svg">
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div>
+            <div class="mobile-projects">Проекты</div>
+            <div class="main-project-list">
+                <a href="projectList.html"
+                   target="_blank">
+                    <div class="main-view-full-resume">
+                        <p>Полный список проектов</p>
+                        <img alt="" src="res/image/svg/next.svg">
+                    </div>
+                </a>
+            </div>
+        </div>
+
     </main>
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>

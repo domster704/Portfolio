@@ -57,18 +57,19 @@
 .projects-table {
     display: flex;
     flex-direction: column;
+    min-width: 100%;
 }
 
-.projects-table-header > div[class^=col]{
+.projects-table-header > div[class^=col] {
     color: #E2E8F0;
 }
 
 .projects-table-row {
+    --gap: 2vw;
     display: flex;
     flex-direction: row;
-    gap: 2vw;
+    gap: var(--gap);
 
-    width: 100%;
     text-align: left;
     padding: 1rem 0;
 
@@ -82,7 +83,7 @@
 }
 
 .col-1 {
-    min-width: 3vw;
+    min-width: calc(15% - var(--gap));
 
     color: #94A3B8;
     font-size: 0.875rem;
@@ -90,7 +91,7 @@
 }
 
 .col-2 {
-    min-width: 15rem;
+    min-width: calc(30% - var(--gap));
 
     color: #E2E8F0;
     font-size: 1rem;
@@ -99,7 +100,7 @@
 }
 
 .col-3 {
-    min-width: 5vw;
+    min-width: calc(15% - var(--gap));
 
     color: #94A3B8;
     font-size: 0.875rem;
@@ -107,12 +108,12 @@
 }
 
 .col-4 {
-    min-width: 18rem;
+    min-width: calc(25% - var(--gap));
     display: inline-block;
 }
 
 .col-5 {
-    min-width: 15rem;
+    min-width: 15%;
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
@@ -126,18 +127,33 @@
 .col-5-link {
     min-width: 0.5rem;
     min-height: 0.5rem;
-    background-size: contain;
-    background: url("../res/image/svg/link_gray.svg") no-repeat center center;
     margin-left: 0.5rem;
 }
 
-.link-list > a {
+.link-element > a {
     color: #94A3B8;
     text-decoration: none;
     text-decoration-color: transparent;
 }
 
-.link-list > a > div {
+.link-element > a > div {
     display: flex;
     flex-direction: row;
+}
+
+.link-element-hover {
+    display: none;
+}
+
+.link-element:hover .link-element-default {
+    display: none;
+}
+
+.link-element:hover .link-element-hover {
+    display: block;
+    transform: translateX(0.1rem) translateY(-0.1rem);
+}
+
+.link-element:hover .col-5-text {
+    color: #5EEAD4;
 }

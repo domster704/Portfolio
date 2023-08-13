@@ -39,7 +39,8 @@ class TemplateJob extends Template {
                         <div class="main-job-place-list-element-block-header">
                             <div class="main-job-place-list-element-position">${this.config.position}</div>
                             <div class="main-job-place-list-element-company">${this.config.companyName}</div>
-                            <div><img class="main-job-place-list-element-block-header-link" src="" alt=""></div>
+                            <div class="main-job-place-list-element-block-header-link-default"><img class="main-job-place-list-element-block-header-link" src="res/image/svg/link.svg" alt=""></div>
+                            <div class="main-job-place-list-element-block-header-link-hover"><img class="main-job-place-list-element-block-header-link" src="res/image/svg/link_blue.svg" alt=""></div>
                         </div>
                         <div class="main-job-place-list-element-block-under-header">${this.generateSubPosition()}</div>
                     </div>
@@ -112,11 +113,12 @@ class TemplateAllProject extends Template {
         let linksHTML = [];
         for (let i of this.config.links) {
             linksHTML.push(`
-                <div class="link-list">
+                <div class="link-element">
                     <a href="${i.link}" target="_blank">
                         <div>
                             <div class="col-5-text">${i.name}</div>
-                            <div><img class="col-5-link" src="" alt=""></div>
+                            <div class="link-element-default"><img class="col-5-link" src="res/image/svg/link_gray.svg" alt=""></div>
+                            <div class="link-element-hover"><img class="col-5-link" src="res/image/svg/link_blue.svg" alt=""></div>
                         </div>
                     </a>
                 </div>`)

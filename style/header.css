@@ -96,14 +96,12 @@ header {
 }
 
 .header-icons {
-    position: relative;
     display: flex;
     gap: 1.25vw;
     align-items: center;
     align-content: center;
     align-self: stretch;
-    margin-top: 0.81rem;
-    height: 100%;
+    margin-top: 2rem;
 }
 
 .header-icons-element {
@@ -113,19 +111,14 @@ header {
     transition: all .1s ease;
 }
 
-.header-icons-element:hover {
-    width: 1.75rem;
-    animation-name: choose-header-icons-element;
-    animation-duration: .2s;
-}
-
-@keyframes choose-header-icons-element {
-    0% {
-        width: 1.5rem;
+@media (max-width: 1024px) {
+    header {
+        position: relative;
+        width: 100%;
+        height: min-content;
     }
 
-    100% {
-        width: 1.75rem;
+    .header-list {
+        display: none;
     }
 }
-
