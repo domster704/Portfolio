@@ -211,6 +211,10 @@ div[class^=mobile] {
     margin: 1.5rem 0;
 }
 
+.main-job-place-list-element-header-image-mobile {
+    display: none;
+}
+
 @media (max-width: 1024px) {
     main {
         width: 100%;
@@ -224,5 +228,32 @@ div[class^=mobile] {
 
     div[class^=mobile] {
         display: block;
+    }
+}
+
+@media (max-width: 700px) {
+    .main-job-place-list-element {
+        display: block;
+    }
+
+    .main-job-place-list .main-job-place-list-element-header {
+        margin-bottom: 0.5rem;
+    }
+
+    .mobile-projects .main-job-place-list-element-header {
+        margin-top: 1rem;
+    }
+
+    .main-job-place-list-element-header-image-desk {
+        display: none;
+    }
+
+    .main-job-place-list-element-header-image-mobile {
+        display: block;
+    }
+
+    .main-job-place-list-element-image-block {
+        --image-width: 13rem;
+        --image-height: calc(var(--image-width) / 7.5 * 4.32813);
     }
 }

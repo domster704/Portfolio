@@ -60,28 +60,33 @@ class TemplateProject extends Template {
         super(config, place);
         this.temp = `
         <a href="${this.config.projectURL}" target="blank">
-                <div class="main-job-place-list-element">
-                    <div class="main-job-place-list-element-header">
-                        <div class="main-job-place-list-element-image-block">
-                            <img class="main-job-place-list-element-image" src="${this.config.image}" alt="">
-                        </div>
-                    </div>
-                    <div class="main-job-place-list-element-block">
-                        <div class="main-job-place-list-element-specialization">
-                            <div class="main-job-place-list-element-block-header">
-                                <div>${this.config.projectName}</div>
-                                <div><img class="main-job-place-list-element-block-header-link" src="" alt="">${this.generateSubPosition()}</div>
-                            </div>
-                        </div>
-                        <div class="main-job-place-list-element-specialization-about">
-                            ${this.config.about}
-                        </div>
-                        <div class="main-job-place-list-element-skills-list">
-                            ${this.generateSkills()}
-                        </div>
+            <div class="main-job-place-list-element">
+                <div class="main-job-place-list-element-header main-job-place-list-element-header-image-desk">
+                    <div class="main-job-place-list-element-image-block">
+                        <img class="main-job-place-list-element-image" src="${this.config.image}" alt="">
                     </div>
                 </div>
-            </a>`
+                <div class="main-job-place-list-element-block">
+                    <div class="main-job-place-list-element-specialization">
+                        <div class="main-job-place-list-element-block-header">
+                            <div>${this.config.projectName}</div>
+                            <div><img class="main-job-place-list-element-block-header-link" src="" alt="">${this.generateSubPosition()}</div>
+                        </div>
+                    </div>
+                    <div class="main-job-place-list-element-specialization-about">
+                        ${this.config.about}
+                    </div>
+                    <div class="main-job-place-list-element-skills-list">
+                        ${this.generateSkills()}
+                    </div>
+                </div>
+                <div class="main-job-place-list-element-header main-job-place-list-element-header-image-mobile">
+                    <div class="main-job-place-list-element-image-block">
+                        <img class="main-job-place-list-element-image" src="${this.config.image}" alt="">
+                    </div>
+                </div>
+            </div>
+        </a>`
         this.renderTemplate();
     }
 }

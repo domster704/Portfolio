@@ -5,7 +5,7 @@
 }
 
 :root {
-    --main-padding: max(3rem, 10vw);
+    --main-padding: max(1.5rem, 10vw);
     --block-width: calc((100vw - 2 * var(--main-padding)) / 2)
 }
 
