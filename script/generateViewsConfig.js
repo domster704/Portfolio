@@ -118,13 +118,13 @@ const ALL_PROJECTS_VIEWS = {
         "target": "Цифровой прорыв",
         "skills": ["Python", "Flask", "OpenCV", "C#", "Windows Forms"],
         "links": [{
-            "name": "Веб-сервер",
+            "name": "Web-server",
             "link": "https://github.com/domster704/PolarBearServer"
         }, {
             "name": "Windows App",
             "link": "https://github.com/nikitakaralius/polar-bear-search"
         }, {
-            "name": "Презентация",
+            "name": "Presentation",
             "link": "https://docs.google.com/presentation/d/1W6TYky-1J5u0NYLySvSMae3_9TNV22Un0rMTcUU4gtM/edit?usp=sharing"
         }]
     }, {
@@ -136,7 +136,7 @@ const ALL_PROJECTS_VIEWS = {
             "name": "GitHub",
             "link": "https://github.com/domster704/KK"
         }, {
-            "name": "Видео",
+            "name": "Video",
             "link": "https://drive.google.com/file/d/1qvcbCWMlOofYf0SUGdOZUqAYU1gTqj_1/view?usp=sharing"
         }]
     }, {

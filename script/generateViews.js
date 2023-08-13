@@ -92,7 +92,15 @@ class TemplateAllProject extends Template {
         this.temp = `
         <div class="projects-table-row">
             <div class="col-1">${this.config.year}</div>
-            <div class="col-2">${this.config.name}</div>
+            <div class="col-2 col-2-desk">${this.config.name}</div>
+            <div class="col-2-new">
+                <a href="${this.config.links[0].link}">
+                    <div class="col-2 col-2-mobile">
+                        <div>${this.config.name}</div>
+                        <div><img class="col-5-link" src="res/image/svg/link.svg" alt=""></div>
+                    </div>
+                </a>
+            </div>
             <div class="col-3">${this.config.target}</div>
             <div class="col-4">
                 ${this.generateSkills()}

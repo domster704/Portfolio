@@ -121,7 +121,6 @@
     font-size: 0.875rem;
     font-weight: 500;
     line-height: 1.09375rem;
-
 }
 
 .col-5-link {
@@ -156,4 +155,59 @@
 
 .link-element:hover .col-5-text {
     color: #5EEAD4;
+}
+
+.col-2-mobile {
+    display: none;
+}
+
+@media (max-width: 1024px) {
+    .projects {
+        width: 100%;
+        padding: 6vw calc(var(--main-padding) - max(0.5rem, 3vw));
+    }
+
+    .col-1 {
+        width: 20%;
+    }
+
+    .col-2 {
+        width: 50%;
+    }
+
+    .col-3 {
+        display: none;
+    }
+
+    .col-4 {
+        display: none;
+    }
+
+    .col-5 {
+        width: 30%;
+    }
+}
+
+@media (max-width: 639px) {
+    .col-1 {
+        width: 20%;
+    }
+
+    .col-2-desk {
+        display: none;
+    }
+
+    .col-2-new {
+        width: 80%;
+    }
+
+    .col-2-mobile {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .col-5 {
+        display: none;
+    }
 }

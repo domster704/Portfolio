@@ -5,7 +5,7 @@
 }
 
 :root {
-    --main-padding: max(1rem, 10vw);
+    --main-padding: max(3rem, 10vw);
     --block-width: calc((100vw - 2 * var(--main-padding)) / 2)
 }
 
@@ -27,7 +27,7 @@ body {
 
 .header-main {
     padding: 0 var(--main-padding);
-    position: initial;
+    position: relative;
 }
 
 .spotlight {
@@ -40,5 +40,11 @@ body {
 @media (max-width: 1024px) {
     .spotlight {
         display: none;
+        position: relative;
     }
+}
+
+a {
+    text-decoration-color: transparent;
+    text-decoration: none;
 }

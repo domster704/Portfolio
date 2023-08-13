@@ -17,20 +17,20 @@ header {
     letter-spacing: -0.075rem;
 }
 
-.header-under_header {
+.header-under-header {
     color: #E2E8F0;
     font-size: 1.25rem;
     font-weight: 500;
     line-height: 1.75rem;
     letter-spacing: -0.03125rem;
-    margin-top: 0.81vw;
+    margin-top: 1rem;
 }
 
 .header-text {
     color: #94A3B8;
     font-size: 1rem;
     line-height: 1.5rem;
-    margin-top: 1vw;
+    margin-top: 1rem;
     max-width: 20rem;
 }
 
