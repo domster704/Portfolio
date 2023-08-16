@@ -172,7 +172,7 @@
 @media (max-width: 1024px) {
     .projects {
         width: 100%;
-        padding: 6vw calc(var(--main-padding) - max(0.5rem, 3vw));
+        padding: 6vw var(--main-padding);
     }
 
     .col-1 {
@@ -206,6 +206,7 @@
     }
 
     .col-2-new {
+        display: block;
         width: 80%;
     }
 
