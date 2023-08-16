@@ -47,7 +47,7 @@ main {
 
 .main-job-place-list-element {
     display: flex;
-    gap: 2rem;
+    gap: 2.5rem;
     padding: 1rem;
     width: var(--block-width);
     border-radius: 0.5rem;
@@ -220,7 +220,7 @@ div[class^=mobile] {
         width: 100%;
         margin-left: 0;
         padding: 1.5rem 0;
-        gap: 3rem;
+        gap: 2.5rem;
     }
 
     .main-job-place-list-element {
