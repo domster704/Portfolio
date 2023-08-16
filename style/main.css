@@ -219,6 +219,8 @@ div[class^=mobile] {
     main {
         width: 100%;
         margin-left: 0;
+        padding: 1.5rem 0;
+        gap: 3rem;
     }
 
     .main-job-place-list-element {
@@ -231,7 +233,8 @@ div[class^=mobile] {
     }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 600px) {
+
     .main-job-place-list-element {
         display: block;
     }

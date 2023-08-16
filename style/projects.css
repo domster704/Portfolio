@@ -78,6 +78,10 @@
     line-height: 1.25rem;
 }
 
+/*div[class^=col]:not(:first-child) {*/
+/*    margin-left: var(--gap);*/
+/*}*/
+
 .projects-table-row:not(:last-child) {
     border-bottom: 2px solid #22293B;
 }
@@ -158,6 +162,10 @@
 }
 
 .col-2-mobile {
+    display: none;
+}
+
+.col-2-new {
     display: none;
 }
 

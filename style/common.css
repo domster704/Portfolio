@@ -5,8 +5,8 @@
 }
 
 :root {
-    --main-padding: max(1.5rem, 10vw);
-    --block-width: calc((100vw - 2 * var(--main-padding)) / 2)
+    --block-width: 33rem;
+    --main-padding: calc((100vw - 2 * var(--block-width)) / 2);
 }
 
 html::-webkit-scrollbar {
@@ -37,14 +37,26 @@ body {
     background: radial-gradient(circle at 50% 50%, rgba(29, 78, 216, 0.15) 0%, rgba(0, 0, 0, 0.00) 80.00%);
 }
 
+
+a {
+    text-decoration-color: transparent;
+    text-decoration: none;
+}
+
 @media (max-width: 1024px) {
+    :root {
+        --main-padding: 1.5rem !important;
+    }
+
     .spotlight {
         display: none;
         position: relative;
     }
 }
 
-a {
-    text-decoration-color: transparent;
-    text-decoration: none;
+@media (max-width: 1200px) {
+    :root {
+        --main-padding: 8vw;
+        --block-width: calc((100vw - 2 * var(--main-padding)) / 2);
+    }
 }

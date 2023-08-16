@@ -116,6 +116,7 @@ header {
         position: relative;
         width: 100%;
         height: min-content;
+        padding-bottom: 0;
     }
 
     .header-list {
