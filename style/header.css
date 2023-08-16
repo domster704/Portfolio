@@ -97,7 +97,7 @@ header {
 
 .header-icons {
     display: flex;
-    gap: 1.25vw;
+    gap: max(1rem, 1.25vw);
     align-items: center;
     align-content: center;
     align-self: stretch;

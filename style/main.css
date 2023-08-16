@@ -215,6 +215,10 @@ div[class^=mobile] {
     display: none;
 }
 
+.header-icons-mobile {
+    display: none;
+}
+
 @media (max-width: 1024px) {
     main {
         width: 100%;
@@ -230,6 +234,14 @@ div[class^=mobile] {
 
     div[class^=mobile] {
         display: block;
+    }
+
+    .header-icons-mobile {
+        display: flex;
+    }
+
+    .header-icons-desk {
+        display: none;
     }
 }
 
