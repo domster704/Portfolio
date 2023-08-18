@@ -14,7 +14,7 @@ const JOV_VIEWS = {
         "subPosition": ["Junior Engineer"],
         "companyName": "ПРОНЕТКОМ",
         "companyURL": "https://pronetcom.ru/",
-        "about": "Поддержание сущесвтующего проекта, code-reviewing, написание SQL-запросов, мобильная разработка.",
+        "about": "Поддержание существующего проекта, code-reviewing, написание SQL-запросов, мобильная разработка.",
         "skills": ["JavaScript", "HTML", "CSS", "Cordova", "SVN", "PostgreSQL", "Node.js", "RESTful", "SFA системы"]
     }].reverse()
 }

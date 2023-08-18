@@ -105,7 +105,7 @@ header {
 }
 
 .header-icons-element {
-    width: 1.5rem;
+    width: 1.75rem;
     aspect-ratio: 1 / 1;
     user-select: none;
     transition: all .1s ease;
