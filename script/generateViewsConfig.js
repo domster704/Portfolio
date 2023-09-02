@@ -79,6 +79,9 @@ const ALL_PROJECTS_VIEWS = {
         }, {
             name: "WebSite",
             link: "https://domster704.github.io/YandexTestTaskReact/"
+        }, {
+            name: "Figma",
+            link: "https://www.figma.com/file/CcNXFQa0aSxk1Pdw1P0IZ8/go-scooter-pass?node-id=0%3A1&mode=dev"
         }]
     }, {
         year: 2023,
