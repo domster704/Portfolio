@@ -29,6 +29,13 @@ const PROJECT_VIEWS = {
         about: "Онлайн-магазин для ограниченного круга лиц в сфере косметики и парфюмерии, написанный на Java с помощью AndroidAPI.",
         skills: ["Android", "Java", "MySQL", "XML", "FTP", "DBF"]
     }, {
+        image: "res/image/YandexGoTest.png",
+        projectName: "Тестовое задание для YandexGo",
+        subPosition: [],
+        projectURL: "https://domster704.github.io/YandexTestTaskReact/",
+        about: "Тестовое задание в виде верстки для Yandex Crowd",
+        skills: ["ReactJS", "JavaScript", "WebPack5", "Babel", "HTML", "CSS"]
+    }, {
         image: "res/image/siteSQB.png",
         projectName: "Кредит онлайн на карту",
         subPosition: [],
@@ -62,6 +69,18 @@ const PROJECT_VIEWS = {
 const ALL_PROJECTS_VIEWS = {
     htmlPlace: "projects-table",
     list: [{
+        year: 2023,
+        name: "Тестовое задание для YandexGo",
+        target: "ООО \"ЯНДЕКС КРАУД\"",
+        skills: ["ReactJS", "JavaScript", "WebPack5", "Babel", "HTML", "CSS"],
+        links: [{
+            name: "GitHub",
+            link: "https://github.com/domster704/YandexTestTaskReact"
+        }, {
+            name: "WebSite",
+            link: "https://domster704.github.io/YandexTestTaskReact/"
+        }]
+    }, {
         year: 2023,
         name: "Филлворд на React",
         target: "Pet-project",
