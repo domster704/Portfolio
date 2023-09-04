@@ -72,7 +72,7 @@ const ALL_PROJECTS_VIEWS = {
         year: 2023,
         name: "Тестовое задание для YandexGo",
         target: "ООО \"ЯНДЕКС КРАУД\"",
-        skills: ["ReactJS", "JavaScript", "WebPack5", "Babel", "HTML", "CSS"],
+        skills: ["ReactJS", "JavaScript", "WebPack5", "Babel", "HTML", "CSS", "Adaptive design"],
         links: [{
             name: "GitHub",
             link: "https://github.com/domster704/YandexTestTaskReact"
