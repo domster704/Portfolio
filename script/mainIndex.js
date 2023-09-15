@@ -3,7 +3,7 @@ const PX_IN_REM = parseFloat(getComputedStyle(document.documentElement).fontSize
 function goToElement(line, elementStr) {
     let elem = $(`.${elementStr}`);
     $('html').animate({
-        scrollTop: elem.offset().top - 6 * PX_IN_REM
+        scrollTop: elem.offset().top - 6 * PX_IN_REM + 1
     });
 
     let listOfChosenItems = document.getElementsByClassName('header-list-element');

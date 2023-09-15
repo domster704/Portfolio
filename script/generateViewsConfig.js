@@ -6,7 +6,8 @@ const JOV_VIEWS = {
         subPosition: ["Middle Engineer"],
         companyName: "Янтарь+",
         companyURL: "https://amberizh.ru/",
-        about: "Разработка мобильного сервиса по оформлению заказов для торговых представителей, просмотру своей статистики и задолженности.",
+        about: "Разработка мобильного сервиса по оформлению заказов для торговых представителей, просмотру своей статистики и задолженности. " +
+            "<br> Улучшил интерфейс программы, ускорил работу алгоритмов более чем в 2.5 раза, оптимизировал SQL-запросы",
         skills: ["Android", "Java", "MySQL", "XML", "FTP", "DBF"]
     }, {
         date: "июнь — июль 2023",
@@ -14,7 +15,7 @@ const JOV_VIEWS = {
         subPosition: ["Junior Engineer"],
         companyName: "ПРОНЕТКОМ",
         companyURL: "https://pronetcom.ru/",
-        about: "Поддержание существующего проекта, code-reviewing, написание SQL-запросов, мобильная разработка.",
+        about: "Поддержание существующего проекта, code-reviewing, написание SQL-запросов, мобильная разработка.<br> Ускорил многие SQL-запросы в среднем на 40%.",
         skills: ["JavaScript", "HTML", "CSS", "Cordova", "SVN", "PostgreSQL", "Node.js", "RESTful", "SFA системы"]
     }].reverse()
 }
