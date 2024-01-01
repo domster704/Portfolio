@@ -1,33 +1,63 @@
 class Template {
+    /**
+     * Initializes a new instance of the constructor.
+     *
+     * @param {type} config - the configuration for the constructor
+     * @param {type} place - the place for the constructor
+     */
     constructor(config, place) {
         this.config = config;
         this.place = place;
         this.temp = '';
     }
 
+    /**
+     * Renders the template by inserting it into the specified HTML element.
+     *
+     * @returns {undefined} This function does not return a value.
+     */
     renderTemplate() {
+        // Select the HTML element to insert the template into
         const htmlPlace = document.querySelector(`.${this.place}`);
+        // Insert the template into the HTML element
         htmlPlace.innerHTML = this.temp + htmlPlace.innerHTML;
     }
 
+    /**
+     * Generates the sub-position HTML elements based on the configuration.
+     *
+     * @return {string} The HTML string of the sub-position elements.
+     */
     generateSubPosition() {
-        let subPositionHTML = [];
-        for (let i of this.config.subPosition) {
-            subPositionHTML.push(`<div>${i}</div>`)
-        }
-        return subPositionHTML.join("");
+        let subPositionElements = this.config.subPosition.map(i => `<div>${i}</div>`);
+        return subPositionElements.join("");
     }
 
+    /**
+     * Generates HTML for skills.
+     *
+     * @returns {string} - The generated HTML for skills.
+     */
     generateSkills() {
         let skillsHTML = [];
-        for (let i of this.config.skills) {
-            skillsHTML.push(`<div class="main-job-place-list-element-skill">${i}</div>`)
+
+        // Iterate over the skills in the config and generate HTML for each skill
+        for (let skill of this.config.skills) {
+            skillsHTML.push(`<div class="main-job-place-list-element-skill">${skill}</div>`);
         }
+
+        // Join the generated HTML for skills into a single string
         return skillsHTML.join("");
     }
 }
 
 class TemplateJob extends Template {
+    /**
+     * Constructs a new instance of the class.
+     *
+     * @param {Object} config - the configuration object
+     * @param {string} place - the place value
+     */
     constructor(config, place) {
         super(config, place);
         this.temp = `
@@ -56,6 +86,13 @@ class TemplateJob extends Template {
 }
 
 class TemplateProject extends Template {
+    /**
+     * Constructor for the class.
+     *
+     * @param {config} config - the configuration object
+     * @param {place} place - the place object
+     * @return {undefined}
+     */
     constructor(config, place) {
         super(config, place);
         this.temp = `
@@ -92,6 +129,13 @@ class TemplateProject extends Template {
 }
 
 class TemplateAllProject extends Template {
+    /**
+     * A constructor function that initializes an object with the given configuration
+     * and place.
+     *
+     * @param {config} config - The configuration object.
+     * @param {place} place - The place object.
+     */
     constructor(config, place) {
         super(config, place);
         this.temp = `
@@ -117,11 +161,22 @@ class TemplateAllProject extends Template {
         this.renderTemplate();
     }
 
+    /**
+     * Renders the template by appending it to the HTML element with the class name
+     * specified by the 'place' property.
+     *
+     * @return {undefined} The generated HTML for the links.
+     */
     renderTemplate() {
         const htmlPlace = document.querySelector(`.${this.place}`);
         htmlPlace.innerHTML += this.temp;
     }
 
+    /**
+     * Generates the links HTML for the given configuration.
+     *
+     * @return {string} The generated HTML for the links.
+     */
     generateLinks() {
         let linksHTML = [];
         for (let i of this.config.links) {

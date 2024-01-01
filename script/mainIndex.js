@@ -8,17 +8,25 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
+    /**
+     * Scrolls to a specific element, highlights a line, and removes the highlight from other lines.
+     * @param {HTMLElement} line - The line element to highlight.
+     * @param {string} elementStr - The class name of the element to scroll to.
+     */
     function goToElement(line, elementStr) {
+        // Scroll to the element
         let elem = $(`.${elementStr}`);
         $('html').animate({
             scrollTop: elem.offset().top - 6 * PX_IN_REM + 1
         });
 
+        // Remove highlight from other lines
         let listOfChosenItems = document.getElementsByClassName('header-list-element');
         for (let i of listOfChosenItems) {
             i.classList.remove("active");
         }
 
+        // Highlight the current line
         line.classList.add('active');
     }
 
