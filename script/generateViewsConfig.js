@@ -1,7 +1,7 @@
 const JOV_VIEWS = {
     htmlPlace: "main-job-place-list",
     list: [{
-        date: "сентябрь 2021 — апрель 2023",
+        date: "сентябрь 2021 — декабрь 2023",
         position: "Android-developer&nbsp;·&nbsp;",
         subPosition: ["Middle Engineer"],
         companyName: "Янтарь+",
