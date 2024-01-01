@@ -60,7 +60,7 @@
     min-width: 100%;
 }
 
-.projects-table-header > div[class^=col] {
+.projects-table-header > *[class^=col] {
     color: #E2E8F0;
 }
 

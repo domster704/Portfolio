@@ -17,7 +17,15 @@ const JOV_VIEWS = {
         companyURL: "https://pronetcom.ru/",
         about: "Поддержание существующего проекта, code-reviewing, написание SQL-запросов, мобильная разработка.<br> Ускорил многие SQL-запросы в среднем на 40%.",
         skills: ["JavaScript", "HTML", "CSS", "Cordova", "SVN", "PostgreSQL", "Node.js", "RESTful", "SFA системы"]
-    }].reverse()
+    }, {
+        date: "октябрь 2023 — сейчас",
+        position: "Front-end developer&nbsp;·&nbsp;",
+        subPosition: ["Web-разработчик", "Контент-менеджер"],
+        companyName: "Dial Digital Agency",
+        companyURL: "https://dialweb.ru/",
+        about: "Верстка, разработка сайтов под CMS Битрикс.<br> Выполнение работ на существующих сайтах",
+        skills: ["JavaScript", "HTML5", "CSS3", "CMS", "Bitrix CMS", "Figma", "PHP", "Bitrix24", "Flexbox", "БЭМ"]
+    }]
 }
 
 const PROJECT_VIEWS = {

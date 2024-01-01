@@ -111,6 +111,43 @@ header {
     transition: all .1s ease;
 }
 
+.header-results {
+    display: flex;
+    /*background-color: beige;*/
+    color: black;
+    margin-top: 4vw;
+    margin-right: 10vw;
+    justify-content: center;
+}
+
+.header-results-arrow {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header-results-img-block img {
+    width: 12rem;
+}
+
+.header-results-arrow img {
+    margin: 0 1vw;
+    width: 3rem;
+}
+
+.header-results-img-block-active {
+    display: block !important;
+}
+
+.header-results-img-block {
+    display: none;
+}
+
+.header-results-img-block-list {
+    display: flex;
+    flex-direction: row;
+}
+
 @media (max-width: 1024px) {
     header {
         position: relative;
