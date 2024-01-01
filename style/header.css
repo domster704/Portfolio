@@ -109,6 +109,9 @@ header {
     aspect-ratio: 1 / 1;
     user-select: none;
     transition: all .1s ease;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 .header-results {
@@ -135,7 +138,7 @@ header {
     width: 3rem;
 }
 
-.header-results-img-block-active {
+.header-results-img-block.active {
     display: block !important;
 }
 
