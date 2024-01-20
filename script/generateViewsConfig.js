@@ -38,7 +38,7 @@ const PROJECT_VIEWS = {
         about: "ГК \"Проектная ПРАКТИКА\". Комплексные решения управления проектами: консалтинг, автоматизация, обучение, аутсорсинг проектных офисов.",
         skills: ["Bitrix CMS", "JavaScript", "HTML5", "CSS3", "Ajax", "PHP8", "БЭМ", "Figma", "AdaptiveDesign"]
     }, {
-        image: "res/image/project/berest.png",
+        image: "res/image/project/berest.jpg",
         projectName: "Сайт для \"Берест\"",
         subPosition: [],
         projectURL: "https://berest-dom.ru/",
