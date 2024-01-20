@@ -31,42 +31,56 @@ const JOV_VIEWS = {
 const PROJECT_VIEWS = {
     htmlPlace: "main-project-list",
     list: [{
-        image: "res/image/AndroidApp.png",
+        image: "res/image/project/PP.png",
+        projectName: "ГК \"Проектная ПРАКТИКА\"",
+        subPosition: [],
+        projectURL: "https://pmpractice.ru/training/corporate/",
+        about: "ГК \"Проектная ПРАКТИКА\". Комплексные решения управления проектами: консалтинг, автоматизация, обучение, аутсорсинг проектных офисов.",
+        skills: ["Bitrix CMS", "JavaScript", "HTML5", "CSS3", "Ajax", "PHP8", "БЭМ", "Figma", "AdaptiveDesign"]
+    }, {
+        image: "res/image/project/berest.png",
+        projectName: "Сайт для \"Берест\"",
+        subPosition: [],
+        projectURL: "https://berest-dom.ru/",
+        about: "Интернет-магазин для компании ООО «БЕРЕСТ» по продаже каркасных домов.",
+        skills: ["Bitrix CMS", "JavaScript", "HTML5", "CSS3", "AdaptiveDesign"]
+    }, {
+        image: "res/image/project/AndroidApp.png",
         projectName: "Онлайн-магазин на Android",
         subPosition: [],
         projectURL: "https://github.com/domster704/MARS-work",
         about: "Онлайн-магазин для ограниченного круга лиц в сфере косметики и парфюмерии, написанный на Java с помощью AndroidAPI.",
         skills: ["Android", "Java", "MySQL", "XML", "FTP", "DBF"]
     }, {
-        image: "res/image/YandexGoTest.png",
+        image: "res/image/project/YandexGoTest.png",
         projectName: "Тестовое задание для YandexGo",
         subPosition: [],
         projectURL: "https://domster704.github.io/YandexTestTaskReact/",
         about: "Тестовое задание в виде верстки для Yandex Crowd",
         skills: ["ReactJS", "JavaScript", "WebPack5", "Babel", "HTML", "CSS"]
     }, {
-        image: "res/image/siteSQB.png",
+        image: "res/image/project/siteSQB.png",
         projectName: "Кредит онлайн на карту",
         subPosition: [],
         projectURL: "https://domster704.github.io/CreditOnline_SQB_FrontEnd/",
         about: "Веб-страница для компании, занимающейся кредитами.",
         skills: ["HTML", "CSS", "JavaScript", "AdaptiveDesign"]
     }, {
-        image: "res/image/RehabCenter.png",
+        image: "res/image/project/RehabCenter.png",
         projectName: "Реабилитационный центр",
         subPosition: [],
         projectURL: "https://domster704.github.io/RehabCenter_FrontEnd/",
         about: "Веб-страница для реабилитационного центра.",
         skills: ["HTML", "CSS", "JavaScript", "AdaptiveDesign"]
     }, {
-        image: "res/image/LCT.png",
+        image: "res/image/project/LCT.png",
         projectName: "Расчет стоимости недвижимости",
         subPosition: [],
         projectURL: "https://github.com/domster704/flaskLCT",
         about: "Сервис автоматизирует процесс расчета стоимости квартир и позволяет ускорить процедуру выдачи экспертных заключений о стоимости квартир и избежать сделок, при которых имущество продается по цене ниже рыночной.",
         skills: ["Python", "Flask", "JWT-token", "YandexAPI", "Flutter", "HTML", "SQL"]
     }, {
-        image: "res/image/PBS.png",
+        image: "res/image/project/PBS.png",
         projectName: "PolarBearSearch",
         subPosition: [],
         projectURL: "https://github.com/domster704/PolarBearServer",
@@ -78,6 +92,28 @@ const PROJECT_VIEWS = {
 const ALL_PROJECTS_VIEWS = {
     htmlPlace: "projects-table",
     list: [{
+        year: 2024,
+        name: "Сайт ГК \"Проектная ПРАКТИКА\"",
+        target: "ГК \"Проектная ПРАКТИКА\"",
+        skills: ["Bitrix CMS", "JavaScript", "HTML5", "CSS3", "Ajax", "PHP8", "БЭМ", "Figma", "AdaptiveDesign"],
+        links: [{
+            name: "WebSite",
+            link: "https://pmpractice.ru/training/corporate/"
+        }, {
+            name: "Figma",
+            link: "https://www.figma.com/file/ItgOYh4tFSqwObdxrJSx4M/Проектная-практика?node-id=4807%3A25476&mode=dev"
+        }]
+    }, {
+        year: 2023,
+        name: "Сайт для \"Берест\"",
+        target: "ООО «БЕРЕСТ»",
+        projectURL: "",
+        skills: ["Bitrix CMS", "JavaScript", "HTML5", "CSS3", "AdaptiveDesign"],
+        links: [{
+            name: "WebSite",
+            link: "https://berest-dom.ru/"
+        }]
+    }, {
         year: 2023,
         name: "Тестовое задание для YandexGo",
         target: "ООО \"ЯНДЕКС КРАУД\"",

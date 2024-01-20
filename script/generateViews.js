@@ -96,13 +96,15 @@ class TemplateProject extends Template {
     constructor(config, place) {
         super(config, place);
         this.temp = `
-        <a href="${this.config.projectURL}" target="blank">
-            <div class="main-job-place-list-element">
-                <div class="main-job-place-list-element-header main-job-place-list-element-header-image-desk">
-                    <div class="main-job-place-list-element-image-block">
+        <div class="main-job-place-list-element">
+            <div class="main-job-place-list-element-header main-job-place-list-element-header-image-desk">
+                <div class="main-job-place-list-element-image-block">
+                    <a href="${this.config.image}" target="blank">
                         <img class="main-job-place-list-element-image" src="${this.config.image}" alt="">
-                    </div>
+                    </a>
                 </div>
+            </div>
+            <a href="${this.config.projectURL}" target="blank">
                 <div class="main-job-place-list-element-block">
                     <div class="main-job-place-list-element-specialization">
                         <div class="main-job-place-list-element-block-header">
@@ -122,8 +124,8 @@ class TemplateProject extends Template {
                         <img class="main-job-place-list-element-image" src="${this.config.image}" alt="">
                     </div>
                 </div>
-            </div>
-        </a>`
+            </a>
+        </div>`
         this.renderTemplate();
     }
 }
