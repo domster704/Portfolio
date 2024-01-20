@@ -116,7 +116,6 @@ header {
 
 .header-results {
     display: flex;
-    /*background-color: beige;*/
     color: black;
     margin-top: 4vw;
     margin-right: 10vw;
@@ -127,19 +126,52 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    cursor: pointer;
 }
 
 .header-results-img-block img {
     width: 12rem;
+    height: 100%;
+    filter: brightness(75%);
+    cursor: pointer;
 }
 
-.header-results-arrow img {
+.header-results-img-block img:hover {
+    filter: brightness(100%);
+}
+
+.header-results-arrow div {
+    --arrow-width: 3rem;
     margin: 0 1vw;
-    width: 3rem;
+    width: var(--arrow-width);
+    height: var(--arrow-width);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.header-results-arrow:hover div {
+    --scaling-width: 0.4rem;
+    margin: 0 calc(1vw - var(--scaling-width) / 2);
+    width: calc(var(--arrow-width) + var(--scaling-width));
+    height: calc(var(--arrow-width) + var(--scaling-width));
 }
 
 .header-results-img-block.active {
     display: block !important;
+    animation-name: appear-header-results-img;
+    animation-duration: .3s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes appear-header-results-img {
+    0% {
+        transform: rotate(-3deg);
+    }
+
+    100% {
+        transform: rotate(0deg)
+    }
 }
 
 .header-results-img-block {
@@ -149,9 +181,15 @@ header {
 .header-results-img-block-list {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 @media (max-width: 1024px) {
+    .header-results-img-block img {
+        filter: brightness(100%);
+    }
+
     header {
         position: relative;
         width: 100%;
@@ -161,5 +199,19 @@ header {
 
     .header-list {
         display: none;
+    }
+
+    .header-results {
+        margin-right: unset;
+    }
+
+    .header-results-img-block-list {
+        width: 100%;
+    }
+
+    @keyframes appear-header-results-img {
+        0% {
+            transform: rotate(-2deg);
+        }
     }
 }

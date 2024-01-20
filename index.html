@@ -13,15 +13,9 @@
 <div class="spotlight"></div>
 <div class="header-main">
     <header>
-        <h2 class="header-header">
-            Исупов Григорий
-        </h2>
-        <h3 class="header-under-header">
-            Full-stack developer
-        </h3>
-        <p class="header-text">
-            Разработка сайтов, мобильных приложений, кроссплатформенных решений
-        </p>
+        <h2 class="header-header">Исупов Григорий</h2>
+        <h3 class="header-under-header">Full-stack developer</h3>
+        <p class="header-text">Разработка сайтов, мобильных приложений, кроссплатформенных решений</p>
         <div class="header-list">
             <div class="header-list-element active" id="main-about">
                 <span class="header-list-element-line"></span>
@@ -47,22 +41,26 @@
                 <div class="header-icons-element" style="background-image: url('res/image/svg/whatsapp.svg')"></div>
             </a>
         </div>
-        <!--        <div class="header-results">-->
-        <!--            <div class="header-results-arrow">-->
-        <!--                <img src="res/image/svg/arrow_back.svg" alt="">-->
-        <!--            </div>-->
-        <!--            <div class="header-results-img-block-list">-->
-        <!--                <div class="header-results-img-block active">-->
-        <!--                    <img src="res/image/certificate/ITS.png" alt="">-->
-        <!--                </div>-->
-        <!--                <div class="header-results-img-block">-->
-        <!--                    <img src="res/image/certificate/ITS.png" alt="">-->
-        <!--                </div>-->
-        <!--            </div>-->
-        <!--            <div class="header-results-arrow">-->
-        <!--                <img src="res/image/svg/arrow_next.svg" alt="">-->
-        <!--            </div>-->
-        <!--        </div>-->
+        <!-- TODO: сделать генерацию через js   -->
+        <div class="header-results" id="slider-block">
+            <div class="header-results-arrow">
+                <div style="background-image: url('res/image/svg/arrow_back.svg')" id="slider-arrow-back"></div>
+            </div>
+            <div class="header-results-img-block-list">
+                <div class="header-results-img-block active">
+                    <a href="res/docs/ITS.pdf" target="_blank"><img src="res/image/certificate/ITS.jpg" alt=""></a>
+                </div>
+                <div class="header-results-img-block">
+                    <a href="res/docs/CP.pdf" target="_blank"><img src="res/image/certificate/CP.jpg" alt=""></a>
+                </div>
+                <div class="header-results-img-block">
+                    <a href="res/docs/KM.pdf" target="_blank"><img src="res/image/certificate/KM.jpg" alt=""></a>
+                </div>
+            </div>
+            <div class="header-results-arrow">
+                <div style="background-image: url('res/image/svg/arrow_next.svg')" id="slider-arrow-next"></div>
+            </div>
+        </div>
     </header>
     <main>
         <div>
@@ -135,6 +133,7 @@
 <script src="script/generateViewsConfig.js"></script>
 <script src="script/generateViews.js"></script>
 <script src="script/spotlight.js"></script>
+<script src="script/slider.js"></script>
 <script src="script/mainIndex.js"></script>
 </body>
 </html>

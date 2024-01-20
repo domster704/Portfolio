@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    transition: .2s all ease;
 }
 
 :root {
@@ -34,9 +35,13 @@ body {
     position: fixed;
     height: 100%;
     width: 100%;
-    background: radial-gradient(circle at 50% 50%, rgba(29, 78, 216, 0.15) 0%, rgba(0, 0, 0, 0.00) 80.00%);
 }
 
+img{
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
 
 a {
     text-decoration-color: transparent;

@@ -15,6 +15,6 @@ document.addEventListener("DOMContentLoaded", () => {
         const y = event.clientY / window.innerHeight * 100;
 
         // Update the background of the spotlight element with a radial gradient
-        spotlight.style.background = `radial-gradient(circle at ${x}% ${y}%, rgba(29, 78, 216, 0.15) 0%, rgba(0, 0, 0, 0.00) 80.00%)`;
+        spotlight.style.background = `radial-gradient(circle at ${x}% ${y}%, rgba(29, 78, 216, 0.15) 0%, rgba(0, 0, 0, 0.00) 50.00%)`;
     }
 });
