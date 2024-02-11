@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <title>Портфолио</title>
     <meta name="viewport" content="width=device-width">
-    <link href="style/murecho_font.css" rel="stylesheet">
-    <link href="style/common.css" rel="stylesheet">
-    <link href="style/header.css" rel="stylesheet">
-    <link href="style/main.css" rel="stylesheet">
+    <link href="/static/style/murecho_font.css" rel="stylesheet">
+    <link href="/static/style/common.css" rel="stylesheet">
+    <link href="/static/style/header.css" rel="stylesheet">
+    <link href="/static/style/main.css" rel="stylesheet">
 </head>
 <body>
 <div class="spotlight"></div>
@@ -32,33 +32,33 @@
         </div>
         <div class="header-icons header-icons-desk">
             <a href="https://github.com/domster704" target="_blank">
-                <div class="header-icons-element" style="background-image: url('res/image/svg/github.svg')"></div>
+                <div class="header-icons-element" style="background-image: url('/static/res/image/svg/github.svg')"></div>
             </a>
             <a href="https://t.me/bolt321" target="_blank">
-                <div class="header-icons-element" style="background-image: url('res/image/svg/tg.svg')"></div>
+                <div class="header-icons-element" style="background-image: url('/static/res/image/svg/tg.svg')"></div>
             </a>
             <a href="https://wa.me/79127458900" target="_blank">
-                <div class="header-icons-element" style="background-image: url('res/image/svg/whatsapp.svg')"></div>
+                <div class="header-icons-element" style="background-image: url('/static/res/image/svg/whatsapp.svg')"></div>
             </a>
         </div>
         <!-- TODO: сделать генерацию через js   -->
         <div class="header-results" id="slider-block">
             <div class="header-results-arrow">
-                <div style="background-image: url('res/image/svg/arrow_back.svg')" id="slider-arrow-back"></div>
+                <div style="background-image: url('/static/res/image/svg/arrow_back.svg')" id="slider-arrow-back"></div>
             </div>
             <div class="header-results-img-block-list">
                 <div class="header-results-img-block active">
-                    <a href="res/docs/ITS.pdf" target="_blank"><img src="res/image/certificate/ITS.png" alt=""></a>
+                    <a href="res/docs/ITS.pdf" target="_blank"><img src="/static/res/image/certificate/ITS.png" alt=""></a>
                 </div>
                 <div class="header-results-img-block">
-                    <a href="res/docs/CP.pdf" target="_blank"><img src="res/image/certificate/CP.png" alt=""></a>
+                    <a href="res/docs/CP.pdf" target="_blank"><img src="/static/res/image/certificate/CP.png" alt=""></a>
                 </div>
                 <div class="header-results-img-block">
-                    <a href="res/docs/KM.pdf" target="_blank"><img src="res/image/certificate/KM.png" alt=""></a>
+                    <a href="res/docs/KM.pdf" target="_blank"><img src="/static/res/image/certificate/KM.png" alt=""></a>
                 </div>
             </div>
             <div class="header-results-arrow">
-                <div style="background-image: url('res/image/svg/arrow_next.svg')" id="slider-arrow-next"></div>
+                <div style="background-image: url('/static/res/image/svg/arrow_next.svg')" id="slider-arrow-next"></div>
             </div>
         </div>
     </header>
@@ -113,7 +113,7 @@
                 <a href="res/docs/resume.pdf" target="_blank">
                     <div class="main-view-full-resume">
                         <p>Полное резюме</p>
-                        <img alt="" src="res/image/svg/next.svg">
+                        <img alt="" src="/static/res/image/svg/next.svg">
                     </div>
                 </a>
             </div>
@@ -121,11 +121,11 @@
         <div>
             <div class="mobile-projects">Проекты</div>
             <div class="main-project-list">
-                <a href="projectList.html"
+                <a href="/projectList"
                    target="_blank">
                     <div class="main-view-full-resume">
                         <p>Полный список проектов</p>
-                        <img alt="" src="res/image/svg/next.svg">
+                        <img alt="" src="{{ url_for('static', filename='res/image/svg/next.svg') }}">
                     </div>
                 </a>
             </div>
@@ -133,10 +133,10 @@
     </main>
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
-<script src="script/generateViewsConfig.js"></script>
-<script src="script/generateViews.js"></script>
-<script src="script/spotlight.js"></script>
-<script src="script/slider.js"></script>
-<script src="script/mainIndex.js"></script>
+<script src="{{ url_for('static', filename='script/generateViewsConfig.js') }}"></script>
+<script src="{{ url_for('static', filename='script/generateViews.js') }}"></script>
+<script src="{{ url_for('static', filename='script/spotlight.js') }}"></script>
+<script src="{{ url_for('static', filename='script/slider.js') }}"></script>
+<script src="{{ url_for('static', filename='script/mainIndex.js') }}"></script>
 </body>
 </html>
