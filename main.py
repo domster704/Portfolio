@@ -2,6 +2,8 @@ from flask import Flask, render_template
 
 app = Flask(__name__)
 
+# TODO переписать все на React
+
 @app.route('/')
 def index():
     return render_template('index.html')
