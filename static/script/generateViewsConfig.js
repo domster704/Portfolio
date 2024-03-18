@@ -55,35 +55,35 @@ const PROJECT_VIEWS = {
         image: "/static/res/image/project/YandexGoTest.png",
         projectName: "Тестовое задание для YandexGo",
         subPosition: [],
-        projectURL: "https://domster704.github.io/YandexTestTaskReact/",
+        projectURL: "https://domster704.github.io/yandex-testTask-react/",
         about: "Тестовое задание в виде верстки для Yandex Crowd",
         skills: ["ReactJS", "JavaScript", "WebPack5", "Babel", "HTML", "CSS"]
     }, {
         image: "/static/res/image/project/siteSQB.png",
         projectName: "Кредит онлайн на карту",
         subPosition: [],
-        projectURL: "https://domster704.github.io/CreditOnline_SQB_FrontEnd/",
+        projectURL: "https://domster704.github.io/credit-online-sqb-frontEnd/",
         about: "Веб-страница для компании, занимающейся кредитами.",
         skills: ["HTML", "CSS", "JavaScript", "AdaptiveDesign"]
     }, {
         image: "/static/res/image/project/RehabCenter.png",
         projectName: "Реабилитационный центр",
         subPosition: [],
-        projectURL: "https://domster704.github.io/RehabCenter_FrontEnd/",
+        projectURL: "https://domster704.github.io/rehab-center-frontEnd/",
         about: "Веб-страница для реабилитационного центра.",
         skills: ["HTML", "CSS", "JavaScript", "AdaptiveDesign"]
     }, {
         image: "/static/res/image/project/LCT.png",
         projectName: "Расчет стоимости недвижимости",
         subPosition: [],
-        projectURL: "https://github.com/domster704/flaskLCT",
+        projectURL: "https://github.com/domster704/calc-value-real-estate",
         about: "Сервис автоматизирует процесс расчета стоимости квартир и позволяет ускорить процедуру выдачи экспертных заключений о стоимости квартир и избежать сделок, при которых имущество продается по цене ниже рыночной.",
         skills: ["Python", "Flask", "JWT-token", "YandexAPI", "Flutter", "HTML", "SQL"]
     }, {
         image: "/static/res/image/project/PBS.png",
         projectName: "PolarBearSearch",
         subPosition: [],
-        projectURL: "https://github.com/domster704/PolarBearServer",
+        projectURL: "https://github.com/domster704/polar-bear-server",
         about: "Приложение по поиску белых медведей в Арктике по снимкам с самолёта.",
         skills: ["Python", "Flask", "OpenCV", "C#", "Windows Forms"]
     }].reverse()
@@ -120,10 +120,10 @@ const ALL_PROJECTS_VIEWS = {
         skills: ["ReactJS", "JavaScript", "WebPack5", "Babel", "HTML", "CSS", "Adaptive design"],
         links: [{
             name: "GitHub",
-            link: "https://github.com/domster704/YandexTestTaskReact"
+            link: "https://github.com/domster704/yandex-testTask-react"
         }, {
             name: "WebSite",
-            link: "https://domster704.github.io/YandexTestTaskReact/"
+            link: "https://domster704.github.io/yandex-testTask-react/"
         }, {
             name: "Figma",
             link: "https://www.figma.com/file/CcNXFQa0aSxk1Pdw1P0IZ8/go-scooter-pass?node-id=0%3A1&mode=dev"
@@ -135,10 +135,10 @@ const ALL_PROJECTS_VIEWS = {
         skills: ["ReactJS", "Redux/Toolkit", "Webpack5", "Babel", "HTML", "CSS", "JavaScript"],
         links: [{
             name: "GitHub",
-            link: "https://github.com/domster704/FillWordReactJS"
+            link: "https://github.com/domster704/fillWord-react"
         }, {
             name: "WebSite",
-            link: "https://domster704.github.io/FillWordReactJS/"
+            link: "https://domster704.github.io/fillWord-react/"
         }]
     }, {
         year: 2023,
@@ -147,10 +147,10 @@ const ALL_PROJECTS_VIEWS = {
         skills: ["HTML", "CSS", "JavaScript", "Adaptive design"],
         links: [{
             name: "GitHub",
-            link: "https://github.com/domster704/CreditOnline_SQB_FrontEnd"
+            link: "https://github.com/domster704/credit-online-sqb-frontEnd"
         }, {
             name: "WebSite",
-            link: "https://domster704.github.io/CreditOnline_SQB_FrontEnd/"
+            link: "https://domster704.github.io/credit-online-sqb-frontEnd/"
         }, {
             name: "Figma",
             link: "https://www.figma.com/file/vA01M8jr3EJxuiOxoVCfuW/CreditOnlineQSB?type=design&node-id=0-1&mode=design&t=0BLjfRxdmciGTTbs-0"
@@ -162,10 +162,10 @@ const ALL_PROJECTS_VIEWS = {
         skills: ["HTML", "CSS", "JavaScript", "AdaptiveDesign"],
         links: [{
             name: "GitHub",
-            link: "https://github.com/domster704/RehabCenter_FrontEnd"
+            link: "https://github.com/domster704/rehab-center-frontEnd"
         }, {
             name: "WebSite",
-            link: "https://domster704.github.io/RehabCenter_FrontEnd/"
+            link: "https://domster704.github.io/rehab-center-frontEnd/"
         }, {
             name: "Figma",
             link: "https://www.figma.com/file/w09wpKUB0tgmN1yB4C0UiK/RecoverCenter?type=design&node-id=1-3&mode=design"
@@ -186,7 +186,7 @@ const ALL_PROJECTS_VIEWS = {
         skills: ["Python", "Flask", "JWT-token", "YandexAPI", "Flutter", "HTML", "SQL"],
         links: [{
             name: "GitHub",
-            link: "https://github.com/domster704/flaskLCT"
+            link: "https://github.com/domster704/calc-value-real-estate"
         }, {
             name: "Documentation",
             link: "https://docs.google.com/document/d/1HpV5P3-jPuAqcvheBeXZuVYLP_j4Lgj5FY8Zawyhgn4/edit#heading=h.1w2u5joy8ub6"
@@ -198,7 +198,7 @@ const ALL_PROJECTS_VIEWS = {
         skills: ["Python", "Flask", "OpenCV", "C#", "Windows Forms"],
         links: [{
             name: "Web-server",
-            link: "https://github.com/domster704/PolarBearServer"
+            link: "https://github.com/domster704/polar-bear-server"
         }, {
             name: "Windows App",
             link: "https://github.com/nikitakaralius/polar-bear-search"
@@ -213,7 +213,7 @@ const ALL_PROJECTS_VIEWS = {
         skills: ["Unity", "C#", "SteamVR"],
         links: [{
             name: "GitHub",
-            link: "https://github.com/domster704/KK"
+            link: "https://github.com/domster704/https://github.com/domster704/catalytic-cracking-vr"
         }, {
             name: "Video",
             link: "https://drive.google.com/file/d/1qvcbCWMlOofYf0SUGdOZUqAYU1gTqj_1/view?usp=sharing"
@@ -225,7 +225,7 @@ const ALL_PROJECTS_VIEWS = {
         skills: ["HTML", "CSS", "JavaScript", "Bootstrap 5", "Python", "Flask", "SQLAlchemy"],
         links: [{
             name: "GitHub",
-            link: "https://github.com/domster704/WebServerGeneration"
+            link: "https://github.com/domster704/web-server-generation"
         }]
     }, {
         year: 2021,
@@ -234,7 +234,10 @@ const ALL_PROJECTS_VIEWS = {
         skills: ["HTML", "JavaScript", "Canvas2D"],
         links: [{
             name: "GitHub",
-            link: "https://github.com/domster704/Osu"
+            link: "https://github.com/domster704/osu-web"
+        }, {
+            name: "WebSite",
+            link: "https://domster704.github.io/osu-web/"
         }]
     }]
 }
