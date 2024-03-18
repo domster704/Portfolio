@@ -25,7 +25,7 @@ const JOV_VIEWS = {
         companyURL: "https://dialweb.ru/",
         about: "Верстка, разработка сайтов под CMS Битрикс.<br> Выполнение работ на существующих сайтах",
         skills: ["JavaScript", "HTML5", "CSS3", "CMS", "Bitrix CMS", "Figma", "PHP", "Bitrix24", "Flexbox", "БЭМ"]
-    }]
+    }].reverse()
 }
 
 const PROJECT_VIEWS = {
@@ -51,6 +51,13 @@ const PROJECT_VIEWS = {
         projectURL: "https://github.com/domster704/MARS-work",
         about: "Онлайн-магазин для ограниченного круга лиц в сфере косметики и парфюмерии, написанный на Java с помощью AndroidAPI.",
         skills: ["Android", "Java", "MySQL", "XML", "FTP", "DBF"]
+    }, {
+        image: "/static/res/image/project/fillWordQT.png",
+        projectName: "Филлворд на QT",
+        subPosition: [],
+        projectURL: "https://github.com/domster704/fillWord-qt",
+        about: "Приложения для визуализации филворда для помощи ученикам школ и других образовательных учреждений в изучении слов английского языка разной сложности.",
+        skills: ["C++", "QT5", "CMake", "QSS", "MinGW", "SnakeAlgorithm"]
     }, {
         image: "/static/res/image/project/YandexGoTest.png",
         projectName: "Тестовое задание для YandexGo",
@@ -86,7 +93,8 @@ const PROJECT_VIEWS = {
         projectURL: "https://github.com/domster704/polar-bear-server",
         about: "Приложение по поиску белых медведей в Арктике по снимкам с самолёта.",
         skills: ["Python", "Flask", "OpenCV", "C#", "Windows Forms"]
-    }].reverse()
+    }
+    ]
 }
 
 const ALL_PROJECTS_VIEWS = {
@@ -112,6 +120,15 @@ const ALL_PROJECTS_VIEWS = {
         links: [{
             name: "WebSite",
             link: "https://berest-dom.ru/"
+        }]
+    }, {
+        year: 2023,
+        name: "Филлворд на QT",
+        target: "НИТУ МИСИС",
+        skills: ["C++", "QT5", "CMake", "QSS", "MinGW", "SnakeAlgorithm"],
+        links: [{
+            name: "GitHub",
+            link: "https://github.com/domster704/fillWord-qt"
         }]
     }, {
         year: 2023,

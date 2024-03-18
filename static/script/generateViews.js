@@ -20,7 +20,7 @@ class Template {
         // Select the HTML element to insert the template into
         const htmlPlace = document.querySelector(`.${this.place}`);
         // Insert the template into the HTML element
-        htmlPlace.innerHTML = this.temp + htmlPlace.innerHTML;
+        htmlPlace.innerHTML = htmlPlace.innerHTML + this.temp;
     }
 
     /**
