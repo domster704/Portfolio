@@ -15,13 +15,24 @@ main {
     gap: 1rem;
 }
 
-.main-about p {
+.main-about :is(p, li), .main-about {
     color: #94A3B8;
     font-size: 1rem;
     line-height: 1.625rem;
 }
 
-.main-about p > a {
+.main-about ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.main-about li {
+    color: #5EEAD4;
+}
+
+.main-about a {
     text-decoration: none;
     color: #E2E8F0;
     font-size: 1rem;
