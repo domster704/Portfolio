@@ -14,7 +14,8 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         });
     }
-    arrowBack.addEventListener('click', () => {
+    arrowBack.addEventListener('click', (event) => {
+        event.stopPropagation();
         if (currentSliderPosition - 1 < 0) {
             currentSliderPosition = sliderElements.length - 1;
         } else {
@@ -23,7 +24,8 @@ document.addEventListener("DOMContentLoaded", () => {
         updateSliderElements(currentSliderPosition);
     });
 
-    arrowNext.addEventListener('click', () => {
+    arrowNext.addEventListener('click', (event) => {
+        event.stopPropagation();
         if (currentSliderPosition + 1 >= sliderElements.length) {
             currentSliderPosition = 0;
         } else {

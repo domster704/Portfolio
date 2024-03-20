@@ -117,8 +117,7 @@ header {
 .header-results {
     display: flex;
     color: black;
-    margin-top: 4vw;
-    margin-right: 10vw;
+    margin-top: 3rem;
     justify-content: center;
 }
 
@@ -130,8 +129,9 @@ header {
 }
 
 .header-results-img-block img {
-    width: 12rem;
-    height: 100%;
+    width: 15rem;
+    height: auto;
+    aspect-ratio: 12 / 17;
     filter: brightness(75%);
     cursor: pointer;
 }
