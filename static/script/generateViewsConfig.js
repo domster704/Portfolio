@@ -15,7 +15,7 @@ const JOV_VIEWS = {
         subPosition: ["Junior Engineer"],
         companyName: "ПРОНЕТКОМ",
         companyURL: "https://pronetcom.ru/",
-        about: "Поддержание существующего проекта, code-reviewing, написание SQL-запросов, мобильная разработка.<br> Ускорил многие SQL-запросы в среднем на 40%.",
+        about: "Поддержка уществующего проекта, code-reviewing, написание SQL-запросов, мобильная разработка.<br> Ускорил многие SQL-запросы в среднем на 40%.",
         skills: ["JavaScript", "HTML", "CSS", "Cordova", "SVN", "PostgreSQL", "Node.js", "RESTful", "SFA системы"]
     }, {
         date: "октябрь 2023 — сейчас",
