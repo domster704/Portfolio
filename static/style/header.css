@@ -159,19 +159,8 @@ header {
 
 .header-results-img-block.active {
     display: block !important;
-    animation-name: appear-header-results-img;
     animation-duration: .3s;
     animation-timing-function: ease-in-out;
-}
-
-@keyframes appear-header-results-img {
-    0% {
-        transform: rotate(-3deg);
-    }
-
-    100% {
-        transform: rotate(0deg)
-    }
 }
 
 .header-results-img-block {
@@ -207,11 +196,5 @@ header {
 
     .header-results-img-block-list {
         width: 100%;
-    }
-
-    @keyframes appear-header-results-img {
-        0% {
-            transform: rotate(-2deg);
-        }
     }
 }
