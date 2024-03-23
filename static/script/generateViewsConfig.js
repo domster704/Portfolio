@@ -45,7 +45,7 @@ const PROJECT_VIEWS = {
         about: "Интернет-магазин для компании ООО «БЕРЕСТ» по продаже каркасных домов.",
         skills: ["Bitrix CMS", "JavaScript", "HTML5", "CSS3", "AdaptiveDesign"]
     }, {
-        image: "/static/res/image/project/AndroidApp.png",
+        image: "/static/res/image/project/MARS_app.png",
         projectName: "Онлайн-магазин на Android",
         subPosition: [],
         projectURL: "https://github.com/domster704/MARS-work",
