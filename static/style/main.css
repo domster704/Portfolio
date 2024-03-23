@@ -80,6 +80,7 @@ main {
     display: none;
 }
 
+/*TODO: сделать через animation*/
 .main-job-place-list-element:hover .main-job-place-list-element-block-header-link-hover {
     display: block;
     transform: translateX(0.3rem) translateY(-0.3rem);
