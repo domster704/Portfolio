@@ -4,6 +4,6 @@
 
 На сайте можно увидеть мое описание, места работ, проекты, контакты и сертификаты с грамотами.
 
-**Ссылка** - http://portfolio.ln-kr.ru/
+**Ссылка** - https://portfolio.ln-kr.ru/
 
 ![image](https://github.com/domster704/Portfolio/assets/61056244/3cf999de-2223-4562-9148-1bbad833df9d)
